@@ -1,0 +1,20 @@
+/* src/styles/index.css */
+
+/* 1. Reset de altura y márgenes */
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 2. Fondo global */
+  body {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+}
+
+/* 3. Import de Tailwind */
+@import "tailwindcss";
